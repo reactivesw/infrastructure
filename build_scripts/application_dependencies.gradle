@@ -2,23 +2,44 @@
 // Auto manage all spring boot dependencies
 apply plugin: 'org.springframework.boot'
 
-// For spring cloud dependencies
-dependencyManagement {
-    imports {
-        mavenBom "org.springframework.cloud:spring-cloud-dependencies:Camden.SR5"
-    }
-}
-
 dependencies {
     // Spring
     compile("org.springframework.boot:spring-boot-starter-web")
-    compile("org.springframework.cloud:spring-cloud-starter-config")
+    compile("org.springframework.cloud:spring-cloud-starter-config:1.3.0.M1")
 
     // For @CreatedDate and @LastModifiedDate
     compile('com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.8.5')
 
+    // Spring data jpa
+    compile('org.springframework.boot:spring-boot-starter-data-jpa')
+    // Postgresql driver
+    compile('org.postgresql:postgresql:9.4.1212')
+
+    // For json web token
+    compile("io.jsonwebtoken:jjwt:0.7.0")
+
     // Lombok
     compile('org.projectlombok:lombok:1.16.12')
 
+    // Common tools
+    compile('org.apache.commons:commons-lang3:3.4')
+
     compile("io.reactivesw:commons:0.0.1")
+
+    // For spock core
+    testCompile('org.spockframework:spock-core:1.0-groovy-2.4')
+
+    // For cglib used by Spock
+    testCompile('cglib:cglib-nodep:3.2.4')
+
+    // For groovy used by spock
+    testCompile('org.codehaus.groovy:groovy-all:2.4.1')
+
+    //message client
+    compile("io.reactivesw:message-client:0.0.1")
+
+    // For google pub/sub
+    compile('com.google.api-client:google-api-client:1.22.0')
+    compile('com.google.cloud:google-cloud-pubsub:0.11.0-alpha')
+    compile('com.google.guava:guava:21.0')
 }
