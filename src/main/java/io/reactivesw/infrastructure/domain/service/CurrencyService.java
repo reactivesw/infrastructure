@@ -1,0 +1,146 @@
+package io.reactivesw.infrastructure.domain.service;
+
+import io.reactivesw.exception.AlreadyExistException;
+import io.reactivesw.exception.NotExistException;
+import io.reactivesw.infrastructure.application.model.CurrencyDraft;
+import io.reactivesw.infrastructure.application.model.CurrencyView;
+import io.reactivesw.infrastructure.application.model.PagedQueryResult;
+import io.reactivesw.infrastructure.application.model.mapper.CurrencyMapper;
+import io.reactivesw.infrastructure.domain.model.Currency;
+import io.reactivesw.infrastructure.infrastructure.repository.CurrencyRepository;
+import io.reactivesw.infrastructure.infrastructure.update.UpdateAction;
+import io.reactivesw.infrastructure.infrastructure.update.UpdateService;
+import io.reactivesw.infrastructure.infrastructure.validator.CurrencyValidator;
+import io.reactivesw.infrastructure.infrastructure.validator.CurrencyVersionValidator;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.dao.DataIntegrityViolationException;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import java.util.List;
+
+/**
+ * Currency service.
+ */
+@Service
+public class CurrencyService {
+
+  /**
+   * Currency Repository.
+   */
+  private transient CurrencyRepository currencyRepository;
+
+  /**
+   * Currency update service.
+   */
+  private transient UpdateService updateService;
+
+  /**
+   * Instantiates a new currency service.
+   *
+   * @param currencyRepository currencyRepository
+   * @param updateService updateService
+   */
+  @Autowired
+  public CurrencyService(CurrencyRepository currencyRepository, UpdateService updateService) {
+    this.currencyRepository = currencyRepository;
+    this.updateService = updateService;
+  }
+
+  private static final Logger LOGGER = LoggerFactory.getLogger(CurrencyService.class);
+
+  /**
+   * Query currency.
+   *
+   * @return queried currency.
+   */
+  public PagedQueryResult<CurrencyView> queryAllCurrency() {
+    LOGGER.debug("Enter.");
+    List<Currency> entities = currencyRepository.findAll();
+
+    List<CurrencyView> result = CurrencyMapper.toModel(entities);
+    LOGGER.debug("Exit. Queried currencies count: {}.", result.size());
+    LOGGER.trace("Currencies: {}.", result);
+    PagedQueryResult<CurrencyView> currencyViewPagedQueryResult = new PagedQueryResult<>();
+    currencyViewPagedQueryResult.setResults(result);
+    currencyViewPagedQueryResult.setTotal(result.size());
+    return currencyViewPagedQueryResult;
+  }
+
+  /**
+   * Add a new currency.
+   *
+   * @param currencyDraft currency draft.
+   * @return currency view.
+   */
+  public CurrencyView addCurrency(CurrencyDraft currencyDraft) {
+    LOGGER.debug("Enter. Currency Draft: {}.", currencyDraft);
+    CurrencyValidator.validateNull(currencyDraft);
+    Currency entity = CurrencyMapper.toEntity(currencyDraft);
+    Currency savedCurrency = saveCurrencyEntity(entity);
+    CurrencyView currencyView = CurrencyMapper.toModel(savedCurrency);
+    LOGGER.debug("Exit. New currencyId: {}.", currencyView.getId());
+    LOGGER.trace("New currency: {}.", currencyView);
+    return currencyView;
+  }
+
+  /**
+   * Save currency.
+   *
+   * @param currency currency
+   * @return currency entity
+   */
+  @Transactional
+  private Currency saveCurrencyEntity(Currency currency) {
+    Currency savedEntity = null;
+    try {
+      savedEntity = currencyRepository.save(currency);
+    } catch (DataIntegrityViolationException ex) {
+      LOGGER.debug("Currency is existed.", ex);
+      throw new AlreadyExistException("Currency is existed");
+    }
+    return savedEntity;
+  }
+
+  public CurrencyView updateCurrency(String id, Integer version, List<UpdateAction> actions) {
+    LOGGER.debug("Enter. CurrencyId: {}, version: {}, actions: {}.", id, version, actions);
+    Currency currency = getById(id);
+    CurrencyVersionValidator.valiate(currency, version);
+
+    Currency updatedCurrency = updateCurrencyEntity(actions, currency);
+    CurrencyView result = CurrencyMapper.toModel(updatedCurrency);
+    LOGGER.debug("Exit. CurrencyId: {}.", id);
+    LOGGER.trace("Updated currency: {}.", result);
+    return result;
+  }
+
+  /**
+   * Get currency by id.
+   *
+   * @param id currency id
+   * @return currency entity
+   */
+  private Currency getById(String id) {
+
+    LOGGER.debug("Enter. Id: {}.", id);
+    Currency currency = currencyRepository.findOne(id);
+    if (currency == null) {
+      LOGGER.debug("Get entity by id failed, could not find entity by id: {}.", id);
+      throw new NotExistException("Can not find currency by id:" + id);
+    }
+    LOGGER.debug("Exit. Id: {}.", id);
+    LOGGER.trace("Currency: {}.", currency);
+    return currency;
+  }
+
+  @Transactional
+  private Currency updateCurrencyEntity(List<UpdateAction> actions, Currency currency) {
+    actions.stream().forEach(action -> {
+      updateService.handle(currency, action);
+    });
+    return currencyRepository.save(currency);
+  }
+}

@@ -5,6 +5,7 @@ import lombok.EqualsAndHashCode;
 
 import org.hibernate.annotations.GenericGenerator;
 import org.springframework.data.annotation.CreatedDate;
+import org.springframework.data.annotation.LastModifiedDate;
 
 import java.time.ZonedDateTime;
 
@@ -13,6 +14,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.persistence.Version;
 
 /**
  * Currency Entity.
@@ -40,10 +42,17 @@ public class Currency {
   private ZonedDateTime createAt;
 
   /**
+   * The Last modified at.
+   */
+  @LastModifiedDate
+  @Column(name = "last_modified_at")
+  private ZonedDateTime lastModifiedAt;
+
+  /**
    * Code of iso 4217
    */
-  @Column(name = "iso_code")
-  private String ISOCode;
+  @Column(name = "iso_code", unique = true)
+  private String isoCode;
 
   /**
    * The conversion factor is used to express the relationship between a major
@@ -55,7 +64,14 @@ public class Currency {
   /**
    * Name of currency.
    */
-  @Column(name = "currency_name")
-  private String currency;
+  @Column(name = "currency_name", unique = true)
+  private String currencyName;
+
+  @Version
+  @Column(name = "version")
+  private Integer version;
+
+  @Column(name = "default_currency")
+  private boolean defaultCurrency;
 }
 
