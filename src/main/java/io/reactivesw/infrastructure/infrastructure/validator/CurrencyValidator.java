@@ -2,7 +2,6 @@ package io.reactivesw.infrastructure.infrastructure.validator;
 
 import io.reactivesw.exception.ParametersException;
 import io.reactivesw.infrastructure.application.model.CurrencyDraft;
-import io.reactivesw.infrastructure.domain.model.Currency;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

@@ -21,6 +21,10 @@ public class SetDefaultCurrency implements UpdateAction {
   @NotNull
   private Boolean defaultCurrency;
 
+  /**
+   * Get action name.
+   * @return update service name.
+   */
   @Override
   public String getActionName() {
     return InfrastructureActionUtils.SET_DEFAULT_CURRENCY;

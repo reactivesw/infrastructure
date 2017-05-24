@@ -67,10 +67,16 @@ public class Currency {
   @Column(name = "currency_name", unique = true)
   private String currencyName;
 
+  /**
+   * Version
+   */
   @Version
   @Column(name = "version")
   private Integer version;
 
+  /**
+   * Default currency.
+   */
   @Column(name = "default_currency")
   private boolean defaultCurrency;
 }

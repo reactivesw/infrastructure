@@ -32,8 +32,16 @@ public class UpdateRequet {
    */
   @NotNull
   @Valid
-  @Setter
   private List<UpdateAction> actions;
+
+  /**
+   * Sets actions.
+   *
+   * @param actions the actions
+   */
+  public void setActions(List<UpdateAction> actions) {
+    this.actions = actions;
+  }
 
   /**
    * convert to UpdateActions.

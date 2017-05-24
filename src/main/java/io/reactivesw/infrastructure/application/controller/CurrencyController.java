@@ -3,7 +3,6 @@ package io.reactivesw.infrastructure.application.controller;
 import io.reactivesw.infrastructure.application.model.CurrencyDraft;
 import io.reactivesw.infrastructure.application.model.CurrencyView;
 import io.reactivesw.infrastructure.application.model.PagedQueryResult;
-import io.reactivesw.infrastructure.application.service.CurrencyApplication;
 import io.reactivesw.infrastructure.domain.service.CurrencyService;
 import io.reactivesw.infrastructure.infrastructure.Router;
 import io.reactivesw.infrastructure.infrastructure.update.UpdateRequet;
@@ -36,24 +35,22 @@ public class CurrencyController {
    */
   private transient CurrencyService currencyService;
 
-  /**
-   * Currency application.
-   */
-  private transient CurrencyApplication currencyApplication;
 
   /**
    * Instantiates a new currency controller.
    *
    * @param currencyService currency service
-   * @param currencyApplication currency application
    */
   @Autowired
-  public CurrencyController(CurrencyService currencyService,
-      CurrencyApplication currencyApplication) {
-    this.currencyApplication = currencyApplication;
+  public CurrencyController(CurrencyService currencyService) {
     this.currencyService = currencyService;
   }
 
+  /**
+   * Get all currency.
+   *
+   * @return list of currency
+   */
   @GetMapping(Router.CURRENCY_ROOT)
   public PagedQueryResult<CurrencyView> queryAllCurrency() {
     LOGGER.info("Enter.");
@@ -64,6 +61,12 @@ public class CurrencyController {
     return result;
   }
 
+  /**
+   * Add currency.
+   *
+   * @param currencyDraft currency draft.
+   * @return currency view
+   */
   @PostMapping(Router.CURRENCY_ROOT)
   public CurrencyView addCurrency(@RequestBody @Valid CurrencyDraft currencyDraft) {
     LOGGER.info("Enter. Add currency: {}.", currencyDraft);

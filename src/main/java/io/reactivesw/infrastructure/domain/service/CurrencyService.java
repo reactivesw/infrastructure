@@ -29,6 +29,11 @@ import java.util.List;
 public class CurrencyService {
 
   /**
+   * Logger.
+   */
+  private static final Logger LOGGER = LoggerFactory.getLogger(CurrencyService.class);
+
+  /**
    * Currency Repository.
    */
   private transient CurrencyRepository currencyRepository;
@@ -50,7 +55,6 @@ public class CurrencyService {
     this.updateService = updateService;
   }
 
-  private static final Logger LOGGER = LoggerFactory.getLogger(CurrencyService.class);
 
   /**
    * Query currency.
@@ -105,6 +109,14 @@ public class CurrencyService {
     return savedEntity;
   }
 
+  /**
+   * Update currency.
+   *
+   * @param id currency id
+   * @param version currency version
+   * @param actions update actions
+   * @return currency view
+   */
   public CurrencyView updateCurrency(String id, Integer version, List<UpdateAction> actions) {
     LOGGER.debug("Enter. CurrencyId: {}, version: {}, actions: {}.", id, version, actions);
     Currency currency = getById(id);
@@ -136,6 +148,13 @@ public class CurrencyService {
     return currency;
   }
 
+  /**
+   * Update currency entity.
+   *
+   * @param actions update actions
+   * @param currency currency entity
+   * @return saved currency entity
+   */
   @Transactional
   private Currency updateCurrencyEntity(List<UpdateAction> actions, Currency currency) {
     actions.stream().forEach(action -> {

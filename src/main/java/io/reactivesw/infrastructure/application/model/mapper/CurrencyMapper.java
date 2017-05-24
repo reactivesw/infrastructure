@@ -10,7 +10,14 @@ import java.util.stream.Collectors;
 /**
  * Currency object converter.
  */
-public class CurrencyMapper {
+public final class CurrencyMapper {
+
+  /**
+   * Instantiates currency mapper.
+   */
+  private CurrencyMapper() {
+
+  }
 
   /**
    * Convert entity to view.
@@ -41,6 +48,12 @@ public class CurrencyMapper {
     return currencies.stream().map(CurrencyMapper::toModel).collect(Collectors.toList());
   }
 
+  /**
+   * Convert currency draft to currency entity.
+   *
+   * @param currencyDraft currency draft
+   * @return currency entity
+   */
   public static Currency toEntity(CurrencyDraft currencyDraft) {
     Currency currency = new Currency();
     currency.setCurrencyName(currencyDraft.getCurrencyName());
