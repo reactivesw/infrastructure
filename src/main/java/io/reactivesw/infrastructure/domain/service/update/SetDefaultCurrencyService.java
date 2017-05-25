@@ -41,9 +41,9 @@ public class SetDefaultCurrencyService implements Updater<Currency, UpdateAction
    */
   @Override
   public void handle(Currency currency, UpdateAction updateAction) {
+    unsetPreviousDefaultCurrency();
     SetDefaultCurrency setDefaultCurrency = (SetDefaultCurrency) updateAction;
     currency.setDefaultCurrency(setDefaultCurrency.getDefaultCurrency());
-    unsetPreviousDefaultCurrency();
   }
 
   /**
@@ -56,7 +56,7 @@ public class SetDefaultCurrencyService implements Updater<Currency, UpdateAction
         .queryCurrencyByDefaultCurrency(isDefaultCurrency);
     currencies.stream().forEach(currency -> {
       currency.setDefaultCurrency(false);
+      currencyRepository.saveAndFlush(currency);
     });
-    currencyRepository.save(currencies);
   }
 }
