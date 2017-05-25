@@ -5,7 +5,7 @@ import io.reactivesw.infrastructure.application.model.CurrencyView;
 import io.reactivesw.infrastructure.application.model.PagedQueryResult;
 import io.reactivesw.infrastructure.domain.service.CurrencyService;
 import io.reactivesw.infrastructure.infrastructure.Router;
-import io.reactivesw.infrastructure.infrastructure.update.UpdateRequet;
+import io.reactivesw.infrastructure.infrastructure.update.UpdateRequest;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -87,7 +87,7 @@ public class CurrencyController {
    */
   @PutMapping(Router.CURRENCY_WITH_ID)
   public CurrencyView updateCurrency(@PathVariable(value = Router.CURRENCY_ID) String id,
-      @RequestBody @Valid UpdateRequet updateRequet) {
+      @RequestBody @Valid UpdateRequest updateRequet) {
     LOGGER.info("Enter. CurrencyId: {}, update request: {}.", id, updateRequet);
     CurrencyView result = currencyService
         .updateCurrency(id, updateRequet.getVersion(), updateRequet.getActions());

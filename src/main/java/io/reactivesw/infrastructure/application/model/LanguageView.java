@@ -7,15 +7,15 @@ import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
-
 /**
- * Currency model.
+ * Language view is used to return response.
  */
+
 @Data
 @EqualsAndHashCode(callSuper = false)
 @JsonIgnoreProperties(ignoreUnknown = true)
 @JsonInclude(Include.NON_NULL)
-public class CurrencyView {
+public class LanguageView {
 
   /**
    * The unique Id of the currency.
@@ -33,17 +33,17 @@ public class CurrencyView {
   private String isoCode;
 
   /**
-   * Currency name.
+   * Language name.
    */
-  private String currencyName;
+  private String languageName;
 
   /**
-   * Is it default currency.
+   * Is it default language.
    */
-  private boolean defaultCurrency;
+  private boolean defaultLanguage;
 
   /**
-   * Conversion factor.
+   * Native name.
    */
-  private Integer conversionFactor;
+  private String nativeName;
 }

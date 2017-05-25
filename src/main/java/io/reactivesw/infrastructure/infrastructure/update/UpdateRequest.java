@@ -13,7 +13,7 @@ import javax.validation.constraints.NotNull;
 /**
  * Object to update currency.
  */
-public class UpdateRequet {
+public class UpdateRequest {
 
   /**
    * The expected version of the category on which the changes should be applied.

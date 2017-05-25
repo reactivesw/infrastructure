@@ -1,0 +1,33 @@
+package io.reactivesw.infrastructure.infrastructure.configuration;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.web.servlet.config.annotation.CorsRegistry;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
+
+/**
+ * Configuration for CORS to handle cross origin request.
+ */
+@Configuration
+public class CorsConfiguration {
+
+  /**
+   * Cors configurer web mvc configurer.
+   *
+   * @return the web mvc configurer
+   */
+  @Bean
+  public WebMvcConfigurer corsConfigurer() {
+    return new WebMvcConfigurerAdapter() {
+      /**
+       * add Cors rule.
+       * @param registry resigtry
+       */
+      @Override
+      public void addCorsMappings(CorsRegistry registry) {
+        registry.addMapping("/**");
+      }
+    };
+  }
+}

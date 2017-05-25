@@ -19,14 +19,14 @@ import javax.persistence.Table;
 import javax.persistence.Version;
 
 /**
- * Currency Entity.
+ * Language Entity.
  */
 @Data
-@Entity
 @EqualsAndHashCode(callSuper = false)
-@Table(name = "currency")
+@Entity
+@Table(name = "language")
 @EntityListeners(AuditingEntityListener.class)
-public class Currency {
+public class Language {
 
   /**
    * Id.
@@ -58,17 +58,16 @@ public class Currency {
   private String isoCode;
 
   /**
-   * The conversion factor is used to express the relationship between a major
-   * currency unit and its corresponding minor currency unit.
+   * Express the language name in this language.
    */
-  @Column(name = "conversion_factor")
-  private int conversionFactor;
+  @Column(name = "native_name")
+  private String nativeName;
 
   /**
-   * Name of currency.
+   * Name of language.
    */
-  @Column(name = "currency_name", unique = true)
-  private String currencyName;
+  @Column(name = "language_name", unique = true)
+  private String languageName;
 
   /**
    * Version
@@ -78,9 +77,8 @@ public class Currency {
   private Integer version;
 
   /**
-   * Default currency.
+   * Default language.
    */
-  @Column(name = "default_currency")
-  private boolean defaultCurrency;
+  @Column(name = "default_language")
+  private boolean defaultLanguage;
 }
-

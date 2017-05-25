@@ -1,0 +1,1041 @@
+[{
+    "name": "Russianruble",
+    "iso_code": "RUB",
+    "conversion_factor": "100"
+}, {
+    "name": "Afghanafghani",
+    "iso_code": "AFN",
+    "conversion_factor": "100"
+}, {
+    "name": "Euro",
+    "iso_code": "EUR",
+    "conversion_factor": "100"
+}, {
+    "name": "Albanianlek",
+    "iso_code": "ALL",
+    "conversion_factor": "100"
+}, {
+    "name": "Britishpound",
+    "iso_code": "GBP",
+    "conversion_factor": "100"
+}, {
+    "name": "Guernseypound",
+    "iso_code": "GGP[G]",
+    "conversion_factor": "100"
+}, {
+    "name": "Algeriandinar",
+    "iso_code": "DZD",
+    "conversion_factor": "100"
+}, {
+    "name": "Euro",
+    "iso_code": "EUR",
+    "conversion_factor": "100"
+}, {
+    "name": "Angolankwanza",
+    "iso_code": "AOA",
+    "conversion_factor": "100"
+}, {
+    "name": "EastCaribbeandollar",
+    "iso_code": "XCD",
+    "conversion_factor": "100"
+}, {
+    "name": "EastCaribbeandollar",
+    "iso_code": "XCD",
+    "conversion_factor": "100"
+}, {
+    "name": "Argentinepeso",
+    "iso_code": "ARS",
+    "conversion_factor": "100"
+}, {
+    "name": "Armeniandram",
+    "iso_code": "AMD",
+    "conversion_factor": "100"
+}, {
+    "name": "Arubanflorin",
+    "iso_code": "AWG",
+    "conversion_factor": "100"
+}, {
+    "name": "SaintHelenapound",
+    "iso_code": "SHP",
+    "conversion_factor": "100"
+}, {
+    "name": "Australiandollar",
+    "iso_code": "AUD",
+    "conversion_factor": "100"
+}, {
+    "name": "Euro",
+    "iso_code": "EUR",
+    "conversion_factor": "100"
+}, {
+    "name": "Azerbaijanimanat",
+    "iso_code": "AZN",
+    "conversion_factor": "100"
+}, {
+    "name": "Bahamiandollar",
+    "iso_code": "BSD",
+    "conversion_factor": "100"
+}, {
+    "name": "Bahrainidinar",
+    "iso_code": "BHD",
+    "conversion_factor": "1000"
+}, {
+    "name": "Bangladeshitaka",
+    "iso_code": "BDT",
+    "conversion_factor": "100"
+}, {
+    "name": "Barbadiandollar",
+    "iso_code": "BBD",
+    "conversion_factor": "100"
+}, {
+    "name": "NewBelarusianruble",
+    "iso_code": "BYN",
+    "conversion_factor": "100"
+}, {
+    "name": "OldBelarusianruble[H]",
+    "iso_code": "BYR",
+    "conversion_factor": "100"
+}, {
+    "name": "Euro",
+    "iso_code": "EUR",
+    "conversion_factor": "100"
+}, {
+    "name": "Belizedollar",
+    "iso_code": "BZD",
+    "conversion_factor": "100"
+}, {
+    "name": "WestAfricanCFAfranc",
+    "iso_code": "XOF",
+    "conversion_factor": "100"
+}, {
+    "name": "Bermudiandollar",
+    "iso_code": "BMD",
+    "conversion_factor": "100"
+}, {
+    "name": "Bhutanesengultrum",
+    "iso_code": "BTN",
+    "conversion_factor": "100"
+}, {
+    "name": "Indianrupee",
+    "iso_code": "INR",
+    "conversion_factor": "100"
+}, {
+    "name": "Bolivianboliviano",
+    "iso_code": "BOB",
+    "conversion_factor": "100"
+}, {
+    "name": "UnitedStatesdollar",
+    "iso_code": "USD",
+    "conversion_factor": "100"
+}, {
+    "name": "BosniaandHerzegovinaconvertiblemark",
+    "iso_code": "BAM",
+    "conversion_factor": "100"
+}, {
+    "name": "Botswanapula",
+    "iso_code": "BWP",
+    "conversion_factor": "100"
+}, {
+    "name": "Brazilianreal",
+    "iso_code": "BRL",
+    "conversion_factor": "100"
+}, {
+    "name": "UnitedStatesdollar",
+    "iso_code": "USD",
+    "conversion_factor": "100"
+}, {
+    "name": "UnitedStatesdollar",
+    "iso_code": "USD",
+    "conversion_factor": "100"
+}, {
+    "name": "Bruneidollar",
+    "iso_code": "BND",
+    "conversion_factor": "100"
+}, {
+    "name": "Singaporedollar",
+    "iso_code": "SGD",
+    "conversion_factor": "100"
+}, {
+    "name": "Bulgarianlev",
+    "iso_code": "BGN",
+    "conversion_factor": "100"
+}, {
+    "name": "WestAfricanCFAfranc",
+    "iso_code": "XOF",
+    "conversion_factor": "100"
+}, {
+    "name": "Burundianfranc",
+    "iso_code": "BIF",
+    "conversion_factor": "100"
+}, {
+    "name": "Cambodianriel",
+    "iso_code": "KHR",
+    "conversion_factor": "100"
+}, {
+    "name": "UnitedStatesdollar",
+    "iso_code": "USD",
+    "conversion_factor": "100"
+}, {
+    "name": "CentralAfricanCFAfranc",
+    "iso_code": "XAF",
+    "conversion_factor": "100"
+}, {
+    "name": "Canadiandollar",
+    "iso_code": "CAD",
+    "conversion_factor": "100"
+}, {
+    "name": "CapeVerdeanescudo",
+    "iso_code": "CVE",
+    "conversion_factor": "100"
+}, {
+    "name": "CaymanIslandsdollar",
+    "iso_code": "KYD",
+    "conversion_factor": "100"
+}, {
+    "name": "CentralAfricanCFAfranc",
+    "iso_code": "XAF",
+    "conversion_factor": "100"
+}, {
+    "name": "CentralAfricanCFAfranc",
+    "iso_code": "XAF",
+    "conversion_factor": "100"
+}, {
+    "name": "Chileanpeso",
+    "iso_code": "CLP",
+    "conversion_factor": "100"
+}, {
+    "name": "Chineseyuan",
+    "iso_code": "CNY",
+    "conversion_factor": "100"
+}, {
+    "name": "Australiandollar",
+    "iso_code": "AUD",
+    "conversion_factor": "100"
+}, {
+    "name": "Colombianpeso",
+    "iso_code": "COP",
+    "conversion_factor": "100"
+}, {
+    "name": "Comorianfranc",
+    "iso_code": "KMF",
+    "conversion_factor": "100"
+}, {
+    "name": "Congolesefranc",
+    "iso_code": "CDF",
+    "conversion_factor": "100"
+}, {
+    "name": "CentralAfricanCFAfranc",
+    "iso_code": "XAF",
+    "conversion_factor": "100"
+}, {
+    "name": "NewZealanddollar",
+    "iso_code": "NZD",
+    "conversion_factor": "100"
+}, {
+    "name": "CostaRicancol\u00f3n",
+    "iso_code": "CRC",
+    "conversion_factor": "100"
+}, {
+    "name": "WestAfricanCFAfranc",
+    "iso_code": "XOF",
+    "conversion_factor": "100"
+}, {
+    "name": "Croatiankuna",
+    "iso_code": "HRK",
+    "conversion_factor": "100"
+}, {
+    "name": "Cubanconvertiblepeso",
+    "iso_code": "CUC",
+    "conversion_factor": "100"
+}, {
+    "name": "Cubanpeso",
+    "iso_code": "CUP",
+    "conversion_factor": "100"
+}, {
+    "name": "NetherlandsAntilleanguilder",
+    "iso_code": "ANG",
+    "conversion_factor": "100"
+}, {
+    "name": "Euro",
+    "iso_code": "EUR",
+    "conversion_factor": "100"
+}, {
+    "name": "Czechkoruna",
+    "iso_code": "CZK",
+    "conversion_factor": "100"
+}, {
+    "name": "Danishkrone",
+    "iso_code": "DKK",
+    "conversion_factor": "100"
+}, {
+    "name": "Djiboutianfranc",
+    "iso_code": "DJF",
+    "conversion_factor": "100"
+}, {
+    "name": "EastCaribbeandollar",
+    "iso_code": "XCD",
+    "conversion_factor": "100"
+}, {
+    "name": "Dominicanpeso",
+    "iso_code": "DOP",
+    "conversion_factor": "100"
+}, {
+    "name": "UnitedStatesdollar",
+    "iso_code": "USD",
+    "conversion_factor": "100"
+}, {
+    "name": "UnitedStatesdollar",
+    "iso_code": "USD",
+    "conversion_factor": "100"
+}, {
+    "name": "Egyptianpound",
+    "iso_code": "EGP",
+    "conversion_factor": "100"
+}, {
+    "name": "UnitedStatesdollar",
+    "iso_code": "USD",
+    "conversion_factor": "100"
+}, {
+    "name": "CentralAfricanCFAfranc",
+    "iso_code": "XAF",
+    "conversion_factor": "100"
+}, {
+    "name": "Eritreannakfa",
+    "iso_code": "ERN",
+    "conversion_factor": "100"
+}, {
+    "name": "Euro",
+    "iso_code": "EUR",
+    "conversion_factor": "100"
+}, {
+    "name": "Ethiopianbirr",
+    "iso_code": "ETB",
+    "conversion_factor": "100"
+}, {
+    "name": "FalklandIslandspound",
+    "iso_code": "FKP",
+    "conversion_factor": "100"
+}, {
+    "name": "Danishkrone",
+    "iso_code": "DKK",
+    "conversion_factor": "100"
+}, {
+    "name": "Fijiandollar",
+    "iso_code": "FJD",
+    "conversion_factor": "100"
+}, {
+    "name": "Euro",
+    "iso_code": "EUR",
+    "conversion_factor": "100"
+}, {
+    "name": "Euro",
+    "iso_code": "EUR",
+    "conversion_factor": "100"
+}, {
+    "name": "CFPfranc",
+    "iso_code": "XPF",
+    "conversion_factor": "100"
+}, {
+    "name": "CentralAfricanCFAfranc",
+    "iso_code": "XAF",
+    "conversion_factor": "100"
+}, {
+    "name": "Gambiandalasi",
+    "iso_code": "GMD",
+    "conversion_factor": "100"
+}, {
+    "name": "Georgianlari",
+    "iso_code": "GEL",
+    "conversion_factor": "100"
+}, {
+    "name": "Euro",
+    "iso_code": "EUR",
+    "conversion_factor": "100"
+}, {
+    "name": "Ghanaiancedi",
+    "iso_code": "GHS",
+    "conversion_factor": "100"
+}, {
+    "name": "Gibraltarpound",
+    "iso_code": "GIP",
+    "conversion_factor": "100"
+}, {
+    "name": "Euro",
+    "iso_code": "EUR",
+    "conversion_factor": "100"
+}, {
+    "name": "EastCaribbeandollar",
+    "iso_code": "XCD",
+    "conversion_factor": "100"
+}, {
+    "name": "Guatemalanquetzal",
+    "iso_code": "GTQ",
+    "conversion_factor": "100"
+}, {
+    "name": "Britishpound",
+    "iso_code": "GBP",
+    "conversion_factor": "100"
+}, {
+    "name": "Guineanfranc",
+    "iso_code": "GNF",
+    "conversion_factor": "100"
+}, {
+    "name": "WestAfricanCFAfranc",
+    "iso_code": "XOF",
+    "conversion_factor": "100"
+}, {
+    "name": "Guyanesedollar",
+    "iso_code": "GYD",
+    "conversion_factor": "100"
+}, {
+    "name": "Haitiangourde",
+    "iso_code": "HTG",
+    "conversion_factor": "100"
+}, {
+    "name": "Honduranlempira",
+    "iso_code": "HNL",
+    "conversion_factor": "100"
+}, {
+    "name": "HongKongdollar",
+    "iso_code": "HKD",
+    "conversion_factor": "100"
+}, {
+    "name": "Hungarianforint",
+    "iso_code": "HUF",
+    "conversion_factor": "100"
+}, {
+    "name": "Icelandickr\u00f3na",
+    "iso_code": "ISK",
+    "conversion_factor": "100"
+}, {
+    "name": "Indianrupee",
+    "iso_code": "INR",
+    "conversion_factor": "100"
+}, {
+    "name": "Indonesianrupiah",
+    "iso_code": "IDR",
+    "conversion_factor": "100"
+}, {
+    "name": "Iranianrial",
+    "iso_code": "IRR",
+    "conversion_factor": "100"
+}, {
+    "name": "Iraqidinar",
+    "iso_code": "IQD",
+    "conversion_factor": "1000"
+}, {
+    "name": "Euro",
+    "iso_code": "EUR",
+    "conversion_factor": "100"
+}, {
+    "name": "Britishpound",
+    "iso_code": "GBP",
+    "conversion_factor": "100"
+}, {
+    "name": "Manxpound",
+    "iso_code": "IMP[G]",
+    "conversion_factor": "100"
+}, {
+    "name": "Israelinewshekel",
+    "iso_code": "ILS",
+    "conversion_factor": "100"
+}, {
+    "name": "Euro",
+    "iso_code": "EUR",
+    "conversion_factor": "100"
+}, {
+    "name": "Jamaicandollar",
+    "iso_code": "JMD",
+    "conversion_factor": "100"
+}, {
+    "name": "Japaneseyen",
+    "iso_code": "JPY",
+    "conversion_factor": "100"
+}, {
+    "name": "Britishpound",
+    "iso_code": "GBP",
+    "conversion_factor": "100"
+}, {
+    "name": "Jerseypound",
+    "iso_code": "JEP[G]",
+    "conversion_factor": "100"
+}, {
+    "name": "Jordaniandinar",
+    "iso_code": "JOD",
+    "conversion_factor": "100"
+}, {
+    "name": "Kazakhstanitenge",
+    "iso_code": "KZT",
+    "conversion_factor": "100"
+}, {
+    "name": "Kenyanshilling",
+    "iso_code": "KES",
+    "conversion_factor": "100"
+}, {
+    "name": "Australiandollar",
+    "iso_code": "AUD",
+    "conversion_factor": "100"
+}, {
+    "name": "NorthKoreanwon",
+    "iso_code": "KPW",
+    "conversion_factor": "100"
+}, {
+    "name": "SouthKoreanwon",
+    "iso_code": "KRW",
+    "conversion_factor": "100"
+}, {
+    "name": "Euro",
+    "iso_code": "EUR",
+    "conversion_factor": "100"
+}, {
+    "name": "Kuwaitidinar",
+    "iso_code": "KWD",
+    "conversion_factor": "1000"
+}, {
+    "name": "Kyrgyzstanisom",
+    "iso_code": "KGS",
+    "conversion_factor": "100"
+}, {
+    "name": "Laokip",
+    "iso_code": "LAK",
+    "conversion_factor": "100"
+}, {
+    "name": "Euro",
+    "iso_code": "EUR",
+    "conversion_factor": "100"
+}, {
+    "name": "Lebanesepound",
+    "iso_code": "LBP",
+    "conversion_factor": "100"
+}, {
+    "name": "Lesotholoti",
+    "iso_code": "LSL",
+    "conversion_factor": "100"
+}, {
+    "name": "SouthAfricanrand",
+    "iso_code": "ZAR",
+    "conversion_factor": "100"
+}, {
+    "name": "Liberiandollar",
+    "iso_code": "LRD",
+    "conversion_factor": "100"
+}, {
+    "name": "Libyandinar",
+    "iso_code": "LYD",
+    "conversion_factor": "1000"
+}, {
+    "name": "Swissfranc",
+    "iso_code": "CHF",
+    "conversion_factor": "100"
+}, {
+    "name": "Euro",
+    "iso_code": "EUR",
+    "conversion_factor": "100"
+}, {
+    "name": "Euro",
+    "iso_code": "EUR",
+    "conversion_factor": "100"
+}, {
+    "name": "Macanesepataca",
+    "iso_code": "MOP",
+    "conversion_factor": "100"
+}, {
+    "name": "Macedoniandenar",
+    "iso_code": "MKD",
+    "conversion_factor": "100"
+}, {
+    "name": "Malagasyariary",
+    "iso_code": "MGA",
+    "conversion_factor": "5"
+}, {
+    "name": "Malawiankwacha",
+    "iso_code": "MWK",
+    "conversion_factor": "100"
+}, {
+    "name": "Malaysianringgit",
+    "iso_code": "MYR",
+    "conversion_factor": "100"
+}, {
+    "name": "Maldivianrufiyaa",
+    "iso_code": "MVR",
+    "conversion_factor": "100"
+}, {
+    "name": "WestAfricanCFAfranc",
+    "iso_code": "XOF",
+    "conversion_factor": "100"
+}, {
+    "name": "Euro",
+    "iso_code": "EUR",
+    "conversion_factor": "100"
+}, {
+    "name": "UnitedStatesdollar",
+    "iso_code": "USD",
+    "conversion_factor": "100"
+}, {
+    "name": "Mauritanianouguiya",
+    "iso_code": "MRO",
+    "conversion_factor": "5"
+}, {
+    "name": "Mauritianrupee",
+    "iso_code": "MUR",
+    "conversion_factor": "100"
+}, {
+    "name": "Mexicanpeso",
+    "iso_code": "MXN",
+    "conversion_factor": "100"
+}, {
+    "name": "UnitedStatesdollar",
+    "iso_code": "USD",
+    "conversion_factor": "100"
+}, {
+    "name": "Moldovanleu",
+    "iso_code": "MDL",
+    "conversion_factor": "100"
+}, {
+    "name": "Euro",
+    "iso_code": "EUR",
+    "conversion_factor": "100"
+}, {
+    "name": "Mongoliant\u00f6gr\u00f6g",
+    "iso_code": "MNT",
+    "conversion_factor": "100"
+}, {
+    "name": "Euro",
+    "iso_code": "EUR",
+    "conversion_factor": "100"
+}, {
+    "name": "EastCaribbeandollar",
+    "iso_code": "XCD",
+    "conversion_factor": "100"
+}, {
+    "name": "Moroccandirham",
+    "iso_code": "MAD",
+    "conversion_factor": "100"
+}, {
+    "name": "Mozambicanmetical",
+    "iso_code": "MZN",
+    "conversion_factor": "100"
+}, {
+    "name": "Burmesekyat",
+    "iso_code": "MMK",
+    "conversion_factor": "100"
+}, {
+    "name": "Armeniandram",
+    "iso_code": "AMD",
+    "conversion_factor": "100"
+}, {
+    "name": "Namibiandollar",
+    "iso_code": "NAD",
+    "conversion_factor": "100"
+}, {
+    "name": "SouthAfricanrand",
+    "iso_code": "ZAR",
+    "conversion_factor": "100"
+}, {
+    "name": "Australiandollar",
+    "iso_code": "AUD",
+    "conversion_factor": "100"
+}, {
+    "name": "Nepaleserupee",
+    "iso_code": "NPR",
+    "conversion_factor": "100"
+}, {
+    "name": "Euro",
+    "iso_code": "EUR",
+    "conversion_factor": "100"
+}, {
+    "name": "CFPfranc",
+    "iso_code": "XPF",
+    "conversion_factor": "100"
+}, {
+    "name": "NewZealanddollar",
+    "iso_code": "NZD",
+    "conversion_factor": "100"
+}, {
+    "name": "Nicaraguanc\u00f3rdoba",
+    "iso_code": "NIO",
+    "conversion_factor": "100"
+}, {
+    "name": "WestAfricanCFAfranc",
+    "iso_code": "XOF",
+    "conversion_factor": "100"
+}, {
+    "name": "Nigeriannaira",
+    "iso_code": "NGN",
+    "conversion_factor": "100"
+}, {
+    "name": "NewZealanddollar",
+    "iso_code": "NZD",
+    "conversion_factor": "100"
+}, {
+    "name": "Turkishlira",
+    "iso_code": "TRY",
+    "conversion_factor": "100"
+}, {
+    "name": "Norwegiankrone",
+    "iso_code": "NOK",
+    "conversion_factor": "100"
+}, {
+    "name": "Omanirial",
+    "iso_code": "OMR",
+    "conversion_factor": "1000"
+}, {
+    "name": "Pakistanirupee",
+    "iso_code": "PKR",
+    "conversion_factor": "100"
+}, {
+    "name": "UnitedStatesdollar",
+    "iso_code": "USD",
+    "conversion_factor": "100"
+}, {
+    "name": "Israelinewshekel",
+    "iso_code": "ILS",
+    "conversion_factor": "100"
+}, {
+    "name": "Jordaniandinar",
+    "iso_code": "JOD",
+    "conversion_factor": "100"
+}, {
+    "name": "Panamanianbalboa",
+    "iso_code": "PAB",
+    "conversion_factor": "100"
+}, {
+    "name": "UnitedStatesdollar",
+    "iso_code": "USD",
+    "conversion_factor": "100"
+}, {
+    "name": "PapuaNewGuineankina",
+    "iso_code": "PGK",
+    "conversion_factor": "100"
+}, {
+    "name": "Paraguayanguaran\u00ed",
+    "iso_code": "PYG",
+    "conversion_factor": "100"
+}, {
+    "name": "Peruviansol",
+    "iso_code": "PEN",
+    "conversion_factor": "100"
+}, {
+    "name": "Philippinepeso",
+    "iso_code": "PHP",
+    "conversion_factor": "100"
+}, {
+    "name": "NewZealanddollar",
+    "iso_code": "NZD",
+    "conversion_factor": "100"
+}, {
+    "name": "Polishz\u0142oty",
+    "iso_code": "PLN",
+    "conversion_factor": "100"
+}, {
+    "name": "Euro",
+    "iso_code": "EUR",
+    "conversion_factor": "100"
+}, {
+    "name": "Qataririyal",
+    "iso_code": "QAR",
+    "conversion_factor": "100"
+}, {
+    "name": "Romanianleu",
+    "iso_code": "RON",
+    "conversion_factor": "100"
+}, {
+    "name": "Russianruble",
+    "iso_code": "RUB",
+    "conversion_factor": "100"
+}, {
+    "name": "Rwandanfranc",
+    "iso_code": "RWF",
+    "conversion_factor": "100"
+}, {
+    "name": "UnitedStatesdollar",
+    "iso_code": "USD",
+    "conversion_factor": "100"
+}, {
+    "name": "Algeriandinar",
+    "iso_code": "DZD",
+    "conversion_factor": "100"
+}, {
+    "name": "Mauritanianouguiya",
+    "iso_code": "MRO",
+    "conversion_factor": "5"
+}, {
+    "name": "Moroccandirham",
+    "iso_code": "MAD",
+    "conversion_factor": "100"
+}, {
+    "name": "SaintHelenapound",
+    "iso_code": "SHP",
+    "conversion_factor": "100"
+}, {
+    "name": "EastCaribbeandollar",
+    "iso_code": "XCD",
+    "conversion_factor": "100"
+}, {
+    "name": "EastCaribbeandollar",
+    "iso_code": "XCD",
+    "conversion_factor": "100"
+}, {
+    "name": "EastCaribbeandollar",
+    "iso_code": "XCD",
+    "conversion_factor": "100"
+}, {
+    "name": "Samoant\u0101l\u0101",
+    "iso_code": "WST",
+    "conversion_factor": "100"
+}, {
+    "name": "Euro",
+    "iso_code": "EUR",
+    "conversion_factor": "100"
+}, {
+    "name": "S\u00e3oTom\u00e9andPr\u00edncipedobra",
+    "iso_code": "STD",
+    "conversion_factor": "100"
+}, {
+    "name": "Saudiriyal",
+    "iso_code": "SAR",
+    "conversion_factor": "100"
+}, {
+    "name": "WestAfricanCFAfranc",
+    "iso_code": "XOF",
+    "conversion_factor": "100"
+}, {
+    "name": "Serbiandinar",
+    "iso_code": "RSD",
+    "conversion_factor": "100"
+}, {
+    "name": "Seychelloisrupee",
+    "iso_code": "SCR",
+    "conversion_factor": "100"
+}, {
+    "name": "SierraLeoneanleone",
+    "iso_code": "SLL",
+    "conversion_factor": "100"
+}, {
+    "name": "Bruneidollar",
+    "iso_code": "BND",
+    "conversion_factor": "100"
+}, {
+    "name": "Singaporedollar",
+    "iso_code": "SGD",
+    "conversion_factor": "100"
+}, {
+    "name": "UnitedStatesdollar",
+    "iso_code": "USD",
+    "conversion_factor": "100"
+}, {
+    "name": "NetherlandsAntilleanguilder",
+    "iso_code": "ANG",
+    "conversion_factor": "100"
+}, {
+    "name": "Euro",
+    "iso_code": "EUR",
+    "conversion_factor": "100"
+}, {
+    "name": "Euro",
+    "iso_code": "EUR",
+    "conversion_factor": "100"
+}, {
+    "name": "SolomonIslandsdollar",
+    "iso_code": "SBD",
+    "conversion_factor": "100"
+}, {
+    "name": "Somalishilling",
+    "iso_code": "SOS",
+    "conversion_factor": "100"
+}, {
+    "name": "SouthAfricanrand",
+    "iso_code": "ZAR",
+    "conversion_factor": "100"
+}, {
+    "name": "Britishpound",
+    "iso_code": "GBP",
+    "conversion_factor": "100"
+}, {
+    "name": "Russianruble",
+    "iso_code": "RUB",
+    "conversion_factor": "100"
+}, {
+    "name": "Euro",
+    "iso_code": "EUR",
+    "conversion_factor": "100"
+}, {
+    "name": "SouthSudanesepound",
+    "iso_code": "SSP",
+    "conversion_factor": "100"
+}, {
+    "name": "SriLankanrupee",
+    "iso_code": "LKR",
+    "conversion_factor": "100"
+}, {
+    "name": "Sudanesepound",
+    "iso_code": "SDG",
+    "conversion_factor": "100"
+}, {
+    "name": "Surinamesedollar",
+    "iso_code": "SRD",
+    "conversion_factor": "100"
+}, {
+    "name": "Swazililangeni",
+    "iso_code": "SZL",
+    "conversion_factor": "100"
+}, {
+    "name": "Swedishkrona",
+    "iso_code": "SEK",
+    "conversion_factor": "100"
+}, {
+    "name": "Swissfranc",
+    "iso_code": "CHF",
+    "conversion_factor": "100"
+}, {
+    "name": "Syrianpound",
+    "iso_code": "SYP",
+    "conversion_factor": "100"
+}, {
+    "name": "NewTaiwandollar",
+    "iso_code": "TWD",
+    "conversion_factor": "100"
+}, {
+    "name": "Tajikistanisomoni",
+    "iso_code": "TJS",
+    "conversion_factor": "100"
+}, {
+    "name": "Tanzanianshilling",
+    "iso_code": "TZS",
+    "conversion_factor": "100"
+}, {
+    "name": "Thaibaht",
+    "iso_code": "THB",
+    "conversion_factor": "100"
+}, {
+    "name": "WestAfricanCFAfranc",
+    "iso_code": "XOF",
+    "conversion_factor": "100"
+}, {
+    "name": "Tonganpa\u02bbanga[P]",
+    "iso_code": "TOP",
+    "conversion_factor": "100"
+}, {
+    "name": "Transnistrianruble",
+    "iso_code": "PRB[G]",
+    "conversion_factor": "100"
+}, {
+    "name": "TrinidadandTobagodollar",
+    "iso_code": "TTD",
+    "conversion_factor": "100"
+}, {
+    "name": "SaintHelenapound",
+    "iso_code": "SHP",
+    "conversion_factor": "100"
+}, {
+    "name": "Tunisiandinar",
+    "iso_code": "TND",
+    "conversion_factor": "1000"
+}, {
+    "name": "Turkishlira",
+    "iso_code": "TRY",
+    "conversion_factor": "100"
+}, {
+    "name": "Turkmenistanmanat",
+    "iso_code": "TMT",
+    "conversion_factor": "100"
+}, {
+    "name": "UnitedStatesdollar",
+    "iso_code": "USD",
+    "conversion_factor": "100"
+}, {
+    "name": "Australiandollar",
+    "iso_code": "AUD",
+    "conversion_factor": "100"
+}, {
+    "name": "Tuvaluandollar",
+    "iso_code": "TVD[G]",
+    "conversion_factor": "100"
+}, {
+    "name": "Ugandanshilling",
+    "iso_code": "UGX",
+    "conversion_factor": "100"
+}, {
+    "name": "Ukrainianhryvnia",
+    "iso_code": "UAH",
+    "conversion_factor": "100"
+}, {
+    "name": "Russianruble[Q][6]",
+    "iso_code": "RUB",
+    "conversion_factor": "100"
+}, {
+    "name": "UnitedArabEmiratesdirham",
+    "iso_code": "AED",
+    "conversion_factor": "100"
+}, {
+    "name": "Britishpound",
+    "iso_code": "GBP",
+    "conversion_factor": "100"
+}, {
+    "name": "UnitedStatesdollar",
+    "iso_code": "USD",
+    "conversion_factor": "100"
+}, {
+    "name": "Uruguayanpeso",
+    "iso_code": "UYU",
+    "conversion_factor": "100"
+}, {
+    "name": "Uzbekistaniso\u02bbm",
+    "iso_code": "UZS",
+    "conversion_factor": "100"
+}, {
+    "name": "Euro",
+    "iso_code": "EUR",
+    "conversion_factor": "100"
+}, {
+    "name": "Venezuelanbol\u00edvar",
+    "iso_code": "VEF",
+    "conversion_factor": "100"
+}, {
+    "name": "Vietnamese\u0111\u1ed3ng",
+    "iso_code": "VND",
+    "conversion_factor": "10"
+}, {
+    "name": "CFPfranc",
+    "iso_code": "XPF",
+    "conversion_factor": "100"
+}, {
+    "name": "Yemenirial",
+    "iso_code": "YER",
+    "conversion_factor": "100"
+}, {
+    "name": "Zambiankwacha",
+    "iso_code": "ZMW",
+    "conversion_factor": "100"
+}, {
+    "name": "Botswanapula",
+    "iso_code": "BWP",
+    "conversion_factor": "100"
+}, {
+    "name": "Britishpound",
+    "iso_code": "GBP",
+    "conversion_factor": "100"
+}, {
+    "name": "Chineseyuan",
+    "iso_code": "CNY",
+    "conversion_factor": "100"
+}, {
+    "name": "Euro",
+    "iso_code": "EUR",
+    "conversion_factor": "100"
+}, {
+    "name": "Indianrupee",
+    "iso_code": "INR",
+    "conversion_factor": "100"
+}, {
+    "name": "Japaneseyen",
+    "iso_code": "JPY",
+    "conversion_factor": "100"
+}, {
+    "name": "SouthAfricanrand",
+    "iso_code": "ZAR",
+    "conversion_factor": "100"
+}, {
+    "name": "UnitedStatesdollar",
+    "iso_code": "USD",
+    "conversion_factor": "100"
+}]
