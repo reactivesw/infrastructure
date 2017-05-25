@@ -135,7 +135,7 @@ public class CurrencyService {
    * @param id currency id
    * @return currency entity
    */
-  private Currency getById(String id) {
+  public Currency getById(String id) {
 
     LOGGER.debug("Enter. Id: {}.", id);
     Currency currency = currencyRepository.findOne(id);

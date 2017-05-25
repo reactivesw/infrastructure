@@ -29,10 +29,8 @@ public final class CurrencyMapper {
     CurrencyView currencyView = new CurrencyView();
     currencyView.setId(currency.getId());
     currencyView.setDefaultCurrency(currency.isDefaultCurrency());
-    currencyView.setCreatedAt(currency.getCreateAt());
     currencyView.setIsoCode(currency.getIsoCode());
     currencyView.setVersion(currency.getVersion());
-    currencyView.setLastModifiedAt(currency.getLastModifiedAt());
     currencyView.setCurrencyName(currency.getCurrencyName());
     currencyView.setConversionFactor(currency.getConversionFactor());
     return currencyView;

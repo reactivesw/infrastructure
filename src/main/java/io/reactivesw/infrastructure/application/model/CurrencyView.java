@@ -1,6 +1,5 @@
 package io.reactivesw.infrastructure.application.model;
 
-import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
@@ -8,7 +7,6 @@ import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
-import java.time.ZonedDateTime;
 
 /**
  * Currency model.
@@ -28,18 +26,6 @@ public class CurrencyView {
    * The current version of the category.
    */
   private Integer version;
-
-  /**
-   * Create time.
-   */
-  @JsonFormat(pattern = "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'", timezone = "UTC")
-  private ZonedDateTime createdAt;
-
-  /**
-   * Last modified time.
-   */
-  @JsonFormat(pattern = "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'", timezone = "UTC")
-  private ZonedDateTime lastModifiedAt;
 
   /**
    * ISO code.
