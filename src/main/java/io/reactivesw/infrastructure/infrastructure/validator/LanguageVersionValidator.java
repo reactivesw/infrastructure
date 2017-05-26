@@ -9,7 +9,7 @@ import org.slf4j.LoggerFactory;
 /**
  * Language version validator.
  */
-public class LanguageVersionValidator {
+public final class LanguageVersionValidator {
 
   /**
    * Logger.

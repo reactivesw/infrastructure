@@ -11,13 +11,18 @@ import org.slf4j.LoggerFactory;
  */
 public final class LanguageValidator {
 
+
   /**
    * Logger.
    */
   private static final Logger LOGGER = LoggerFactory.getLogger(LanguageValidator.class);
+
   /**
-   * Instantiates a new language validator.
+   * Instantiates a new languag validator.
    */
+  private LanguageValidator() {
+
+  }
 
   /**
    * Validate whether isoCode, languageName, nativeName are empty.

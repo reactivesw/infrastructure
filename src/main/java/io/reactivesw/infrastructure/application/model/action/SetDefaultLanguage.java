@@ -21,6 +21,11 @@ public class SetDefaultLanguage implements UpdateAction {
   @NotNull
   private Boolean defaultLanguage;
 
+  /**
+   * Get action name.
+   *
+   * @return action name
+   */
   @Override
   public String getActionName() {
     return InfrastructureActionUtils.SET_DEFAULT_LANGUAGE;

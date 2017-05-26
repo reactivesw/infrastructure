@@ -13,7 +13,6 @@ class CurrencyValidatorTest extends Specification {
     def "Test1: entity's isoCode is empty, should throw a parametersException"() {
         given: "prepare data"
         CurrencyDraft currencyDraft = new CurrencyDraft()
-        currencyDraft.isoCode = ""
         currencyDraft.currencyName = "name"
 
         when: "call function to validate"
