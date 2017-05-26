@@ -33,7 +33,7 @@ public final class CurrencyValidator {
         || currencyDraft.getIsoCode().isEmpty()
         ) {
       LOGGER.debug("Currency ISO code could not be null.");
-      throw new ParametersException("Currency name could not be null");
+      throw new ParametersException("Currency ISO code could not be null");
     }
     if (currencyDraft.getCurrencyName() == null
         || currencyDraft.getCurrencyName().isEmpty()) {

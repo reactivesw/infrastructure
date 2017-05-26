@@ -6,6 +6,8 @@ import io.reactivesw.infrastructure.infrastructure.util.InfrastructureActionUtil
 import lombok.Getter;
 import lombok.Setter;
 
+import javax.validation.constraints.NotNull;
+
 /**
  * SetDefaultLanguage is used to update language.
  */
@@ -16,7 +18,8 @@ public class SetDefaultLanguage implements UpdateAction {
   /**
    * Default language
    */
-  private boolean defaultLanguage;
+  @NotNull
+  private Boolean defaultLanguage;
 
   @Override
   public String getActionName() {

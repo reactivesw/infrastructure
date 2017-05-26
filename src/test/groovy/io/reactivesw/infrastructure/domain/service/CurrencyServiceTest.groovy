@@ -7,7 +7,7 @@ import io.reactivesw.infrastructure.application.model.action.SetDefaultCurrency
 import io.reactivesw.infrastructure.domain.model.Currency
 import io.reactivesw.infrastructure.infrastructure.repository.CurrencyRepository
 import io.reactivesw.infrastructure.infrastructure.update.UpdateAction
-import io.reactivesw.infrastructure.infrastructure.update.UpdateService
+import io.reactivesw.infrastructure.infrastructure.update.CurrencyUpdaterService
 import org.assertj.core.util.Lists
 import org.springframework.dao.DataIntegrityViolationException
 import spock.lang.Specification
@@ -16,7 +16,7 @@ import spock.lang.Specification
  * Currency Service Test.
  */
 class CurrencyServiceTest extends Specification {
-    UpdateService updateService = Mock()
+    CurrencyUpdaterService updateService = Mock()
     CurrencyRepository currencyRepository = Mock(CurrencyRepository)
     CurrencyService currencyService = new CurrencyService(currencyRepository, updateService)
     def currencyEntity = new Currency()

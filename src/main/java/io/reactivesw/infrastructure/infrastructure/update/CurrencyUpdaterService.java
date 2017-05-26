@@ -13,7 +13,7 @@ import org.springframework.stereotype.Service;
  * If we need get data from other service, we should use update service.
  */
 @Service
-public class UpdateService implements Updater<Currency, UpdateAction> {
+public class CurrencyUpdaterService implements Updater<Currency, UpdateAction> {
 
   /**
    * ApplicationContext for get update services.

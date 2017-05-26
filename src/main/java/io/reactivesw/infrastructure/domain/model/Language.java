@@ -21,9 +21,9 @@ import javax.persistence.Version;
 /**
  * Language Entity.
  */
-@Data
-@EqualsAndHashCode(callSuper = false)
 @Entity
+@EqualsAndHashCode(callSuper = false)
+@Data
 @Table(name = "language")
 @EntityListeners(AuditingEntityListener.class)
 public class Language {

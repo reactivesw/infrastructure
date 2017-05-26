@@ -26,4 +26,17 @@ public class Router {
    * Currency with id.
    */
   public static final String CURRENCY_WITH_ID = CURRENCY_ROOT + "/{" + CURRENCY_ID + "}";
+  /**
+   * The root path of language.
+   */
+  public static final String LANGUAGE_ROOT = INFRASTRUCTURE_ROOT + "language";
+  /**
+   * Language id.
+   */
+  public static final String LANGUAGE_ID = "languageID";
+
+  /**
+   * Language with id.
+   */
+  public static final String LANGUAGE_WITH_ID = LANGUAGE_ROOT + "/{" + LANGUAGE_ID + "}";
 }

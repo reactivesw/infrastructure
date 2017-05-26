@@ -9,8 +9,7 @@ import io.reactivesw.infrastructure.application.model.mapper.CurrencyMapper;
 import io.reactivesw.infrastructure.domain.model.Currency;
 import io.reactivesw.infrastructure.infrastructure.repository.CurrencyRepository;
 import io.reactivesw.infrastructure.infrastructure.update.UpdateAction;
-import io.reactivesw.infrastructure.infrastructure.update.UpdateService;
-import io.reactivesw.infrastructure.infrastructure.validator.CurrencyValidator;
+import io.reactivesw.infrastructure.infrastructure.update.CurrencyUpdaterService;
 import io.reactivesw.infrastructure.infrastructure.validator.CurrencyVersionValidator;
 
 import org.slf4j.Logger;
@@ -41,18 +40,18 @@ public class CurrencyService {
   /**
    * Currency update service.
    */
-  private transient UpdateService updateService;
+  private transient CurrencyUpdaterService currencyUpdaterService;
 
   /**
    * Instantiates a new currency service.
    *
    * @param currencyRepository currencyRepository
-   * @param updateService updateService
+   * @param currencyUpdaterService updateService
    */
   @Autowired
-  public CurrencyService(CurrencyRepository currencyRepository, UpdateService updateService) {
+  public CurrencyService(CurrencyRepository currencyRepository, CurrencyUpdaterService currencyUpdaterService) {
     this.currencyRepository = currencyRepository;
-    this.updateService = updateService;
+    this.currencyUpdaterService = currencyUpdaterService;
   }
 
 
@@ -82,7 +81,6 @@ public class CurrencyService {
    */
   public CurrencyView addCurrency(CurrencyDraft currencyDraft) {
     LOGGER.debug("Enter. Currency Draft: {}.", currencyDraft);
-    CurrencyValidator.validateNull(currencyDraft);
     Currency entity = CurrencyMapper.toEntity(currencyDraft);
     Currency savedCurrency = saveCurrencyEntity(entity);
     CurrencyView currencyView = CurrencyMapper.toModel(savedCurrency);
@@ -158,7 +156,7 @@ public class CurrencyService {
   @Transactional
   private Currency updateCurrencyEntity(List<UpdateAction> actions, Currency currency) {
     actions.stream().forEach(action -> {
-      updateService.handle(currency, action);
+      currencyUpdaterService.handle(currency, action);
     });
     return currencyRepository.save(currency);
   }

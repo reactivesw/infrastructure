@@ -23,6 +23,7 @@ public class SetDefaultCurrency implements UpdateAction {
 
   /**
    * Get action name.
+   *
    * @return update service name.
    */
   @Override

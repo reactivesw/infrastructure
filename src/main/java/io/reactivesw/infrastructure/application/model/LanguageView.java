@@ -40,7 +40,7 @@ public class LanguageView {
   /**
    * Is it default language.
    */
-  private boolean defaultLanguage;
+  private Boolean defaultLanguage;
 
   /**
    * Native name.

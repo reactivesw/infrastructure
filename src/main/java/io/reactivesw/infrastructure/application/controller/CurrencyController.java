@@ -6,6 +6,7 @@ import io.reactivesw.infrastructure.application.model.PagedQueryResult;
 import io.reactivesw.infrastructure.domain.service.CurrencyService;
 import io.reactivesw.infrastructure.infrastructure.Router;
 import io.reactivesw.infrastructure.infrastructure.update.UpdateRequest;
+import io.reactivesw.infrastructure.infrastructure.validator.CurrencyValidator;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -71,6 +72,7 @@ public class CurrencyController {
   public CurrencyView addCurrency(@RequestBody @Valid CurrencyDraft currencyDraft) {
     LOGGER.info("Enter. Add currency: {}.", currencyDraft);
 
+    CurrencyValidator.validateNull(currencyDraft);
     CurrencyView currencyView = currencyService.addCurrency(currencyDraft);
 
     LOGGER.info("Exit. CurrencyId: {}.", currencyView.getId());
