@@ -82,3 +82,4 @@ hs_err_pid*
 /gradle
 gradlew*
 
+/src/main/resources/.tern-port
