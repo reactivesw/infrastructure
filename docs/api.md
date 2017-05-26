@@ -30,16 +30,39 @@ Infrastructure aims to provide basic service for other services.
 | version | Integer | required, NotNull, min is 0 |
 | actions | List\<UpdateAction\> | required, NotNull |
 
+### LanguageView
+| field name | field type | comments |
+|-----|------|-----|
+| id | String | Language Id |
+| version | Integer | |
+| isoCode | String | ISOCode of language |
+| languageName | String | language name |
+| nativeName | String | Express the language name in this language.|
+| defaultLanguage | Boolean | indicate whether it is the default language |
+
+### LanguageDraft
+
+| field name | field type | comments |
+|-----|------|-----|
+| isoCode | String | ISOCode of language |
+| languageName | String | language name |
+| nativeName | String | Express the language name in this language.|
+
 ### Update Action
 
 ##### SetDefaultCurrency
-
 
 | field name | field type | comments |
 |-|-|-|
 | action | String | required, set as `setDefaultCurrency` |
 | defaultCurrency | Boolean | required, NotNull |
 
+##### SetDefaultLanguage
+
+| field name | field type | comments |
+|-|-|-|
+| action | String | required, set as `setDefaultLanguage` |
+| defaultLanguage | Boolean | required, NotNull |
 
 ### PagedQueryResult
 
@@ -67,9 +90,9 @@ Infrastructure aims to provide basic service for other services.
 * payload example:
 ```
 {
-    "isoCode": "RUB",
-    "currencyName": "Russian ruble",
-    "conversionFactor": 100
+"isoCode": "RUB",
+"currencyName": "Russian ruble",
+"conversionFactor": 100
 }
 ```
 
@@ -91,3 +114,42 @@ Infrastructure aims to provide basic service for other services.
 | updateRequest | UpdateRequest | required |
 
 * response : CurrencyView
+
+### add language 
+
+* Url : {infrastructure service url}/language
+* method : POST
+* request body :
+
+| name | type | required |
+|-|-|-|
+| addLanguage | LanguageDraft | required |
+
+* response : LanguageView
+* payload example:
+```
+{
+"isoCode": "aa",
+"languageName": "Afar",
+"nativeName": "Afaraf"
+}
+```
+
+### get all languages
+
+* URL : {infrastructure service url}/language
+* method : GET
+* response : PagedQueryResult<LanguageView>
+
+
+### update language by id
+
+* URL : {infrastructure service url}/{languageId}
+* method : PUT
+* request body :
+
+| name | type | comments |
+|-|-|-|
+| updateRequest | UpdateRequest | required |
+
+* response : LanguageView
